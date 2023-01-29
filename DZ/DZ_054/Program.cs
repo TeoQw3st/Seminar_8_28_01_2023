@@ -57,7 +57,7 @@ void SortingArray(int[,] array)
     }
 }
 
-int[,] matr = CreateRandomArray(4, 4, 1, 12);
+int[,] matr = CreateRandomArray(4, 4, 0, 34);
 ShowArray(matr);
 Console.WriteLine();
 SortingArray(matr);
