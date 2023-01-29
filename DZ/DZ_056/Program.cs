@@ -41,6 +41,7 @@ void ShowArray(int[,] array)
 int SearchMinSummInLine(int[,] array)
 {
     int minsumm = 0;
+    int minline = 0;
     // Console.WriteLine($"минимальная сумма до цикла {minsumm}");
 
     for (int y = 0; y < 1; y++)
@@ -49,11 +50,12 @@ int SearchMinSummInLine(int[,] array)
         for (int z = 0; z < array.GetLength(1); z++)
         {
             minsumm = minsumm + array[y, z];
+            minline = y+1;
         }
 
     }
     // Console.WriteLine($"минимальная сумма после первого цикла {minsumm}");
-    int minline = 0;
+   
 
     for (int i = 0; i < array.GetLength(0); i++)
     {
