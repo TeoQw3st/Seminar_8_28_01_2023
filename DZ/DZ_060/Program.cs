@@ -75,5 +75,5 @@ void ShowArray(int[,,] array)
 }
 
 
-int[,,] matr = CreateArray();
+int[,,] matr = CreateRandomArray(2,2,2,9,100);
 ShowArray(matr);
